@@ -413,6 +413,9 @@ width: 264px;
 .footer{
     margin-right: 120px;
 }
+.soc-media{
+    margin-right: 80px;
+}
 .soc-media-text{
     margin-bottom: 16px;
 line-height: 1.5;
@@ -450,6 +453,81 @@ fill:currentColor
     background-color: #31D0AA;
 }
 
+.subscribe-wrap{
+    display: flex;
+        gap: 24px;
+}
+.subscribe-form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-form-input-des {
+    margin-bottom: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+}
+
+
+.subscribe-form-input {
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 6px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    line-height: 1.33;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+.subscribe-form-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-form-input:focus {
+    outline: none;
+    border-color:#4D5AE5;
+}
+
+.subscribe-form-submit {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+align-self: center;
+
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-family: inherit;
+    color: #FFFFFF;
+    background-color: var(--primary-btn-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+.subscribe-form-icon{
+    fill: #FFFFFF;
+}
+
+.subscribe-form-submit:is(:hover, :focus) {
+    background-color: var(--hover-color);
+}
 
     /* Portfolio */
 .portfolio-nav{
